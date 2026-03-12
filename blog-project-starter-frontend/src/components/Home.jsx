@@ -1,5 +1,3 @@
-import React from 'react'
-import Navbar from './common/Navbar'
 import BlogProfileImage from "../assets/Blog Website Design.jpg"
 import CSS from "../assets/css-3.png"
 import HTML from "../assets/html.png"
@@ -27,13 +25,12 @@ function Home() {
                     <p className='py-2'>I can create stunning website for your company, Do check my works. I won't disappoint you. Try me for 7 Days before you decide anything.</p>
                     <button
                         className='button-style mt-2'
-                        onClick={() => navigate("/contact")}
-                    >
+                        onClick={() => navigate("/contact")}>
                         Hire Me
                     </button>
                 </div>
                 <div className='justify-center hidden sm:block'>
-                    <img src={BlogProfileImage} className='w-60 md:w-96 ' alt="Blog Profile Image" />
+                    <img src={BlogProfileImage} className='w-60 md:w-96' alt="Blog Profile Image" />
 
                 </div>
 
@@ -41,12 +38,12 @@ function Home() {
 
 
             <div className='flex justify-evenly py-6'>
-                <img src={HTML} style={{ width: "50px" }} />
-                <img src={CSS} style={{ width: "50px" }} />
-                <img src={JS} style={{ width: "50px" }} />
-                <img src={REACTICON} style={{ width: "50px" }} />
-                <img src={DB} style={{ width: "50px" }} />
-                <img src={NODE} style={{ width: "50px" }} />
+                <img src={HTML} alt="image" style={{ width: "50px" }} />
+                <img src={CSS} alt="image" style={{ width: "50px" }} />
+                <img src={JS} alt="image" style={{ width: "50px" }} />
+                <img src={REACTICON} alt="image" style={{ width: "50px" }} />
+                <img src={DB} alt="image" style={{ width: "50px" }} />
+                <img src={NODE} alt="image" style={{ width: "50px" }} />
             </div>
 
             <div className='flex flex-col mt-10 items-center justify-around sm:flex-row'>

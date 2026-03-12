@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import auth from '../../config/firebase'
 import { signOut } from 'firebase/auth'
-import About from './../About';
 function Navbar() {
     const navigate = useNavigate()
     const [log,setlog]=useState(false)
