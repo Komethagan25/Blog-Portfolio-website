@@ -19,7 +19,7 @@ function Signup() {
             
         })
 
-    });
+    }, [navigate]);
 
     const handleSubmit = (e) => {
         e.preventDefault();

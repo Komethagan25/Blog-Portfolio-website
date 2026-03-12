@@ -38,12 +38,12 @@ function Home() {
 
 
             <div className='flex justify-evenly py-6'>
-                <img src={HTML} alt="image" style={{ width: "50px" }} />
-                <img src={CSS} alt="image" style={{ width: "50px" }} />
-                <img src={JS} alt="image" style={{ width: "50px" }} />
-                <img src={REACTICON} alt="image" style={{ width: "50px" }} />
-                <img src={DB} alt="image" style={{ width: "50px" }} />
-                <img src={NODE} alt="image" style={{ width: "50px" }} />
+                <img src={HTML} alt="HTML5 Logo" style={{ width: "50px" }} />
+                <img src={CSS} alt="CSS3 Logo" style={{ width: "50px" }} />
+                <img src={JS} alt="JavaScript Logo" style={{ width: "50px" }} />
+                <img src={REACTICON} alt="React Logo" style={{ width: "50px" }} />
+                <img src={DB} alt="Database Server Icon" style={{ width: "50px" }} />
+                <img src={NODE} alt="Node JS Logo" style={{ width: "50px" }} />
             </div>
 
             <div className='flex flex-col mt-10 items-center justify-around sm:flex-row'>
