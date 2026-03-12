@@ -12,7 +12,7 @@ app.use(cors())
 app.use(bodyParser.json());
 
 // MongoDB Connection
-mongoose.connect('mongodb://localhost:27017/blogDB').then(()=>{
+mongoose.connect('mongodb+srv://komethagan12:blogdb123@cluster0.vlz29j9.mongodb.net/?appName=Cluster0').then(()=>{
     console.log("Connection Successfull")
 })
 
@@ -76,7 +76,7 @@ app.post('/api/blogs', async (req, res) => {
   } catch (err) {
     res.status(400).json({ message: err.message });
   }
-  
+
 });
 
 // Start server
