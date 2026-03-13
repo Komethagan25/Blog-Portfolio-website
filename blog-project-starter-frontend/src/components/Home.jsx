@@ -21,8 +21,7 @@ function Home() {
                 <div className="w-full sm:w-1/2 flex-col justify-center">
                     <h2 className='text-3xl md:text-6xl font-bold pb-2'>Hy! I Am</h2>
                     <h2 className='text-4xl md:text-7xl font-bold text-orange-400 py-2'>Komethagan T</h2>
-                    <img src={BlogProfileImage} className='w-60 block sm:hidden' alt="Blog Profile Image" />
-                    <p className='py-2'>I can create stunning website for your company, Do check my works. I won't disappoint you. Try me for 7 Days before you decide anything.</p>
+                    <img src={BlogProfileImage} className='w-60 block sm:hidden' alt="Blog Profile" />                    <p className='py-2'>I can create stunning website for your company, Do check my works. I won't disappoint you. Try me for 7 Days before you decide anything.</p>
                     <button
                         className='button-style mt-2'
                         onClick={() => navigate("/contact")}>
@@ -30,8 +29,7 @@ function Home() {
                     </button>
                 </div>
                 <div className='justify-center hidden sm:block'>
-                    <img src={BlogProfileImage} className='w-60 md:w-96' alt="Blog Profile Image" />
-
+                    <img src={BlogProfileImage} className='w-60 md:w-96' alt="Blog Profile" />
                 </div>
 
             </div>
@@ -90,7 +88,7 @@ function Home() {
 
             <div className='flex items-center justify-center my-14'>
                 <div className='justify-center hidden sm:block'>
-                    <img src={BlogImage} className='w-60 md:w-96 ' alt="Blog Profile Image" />
+                    <img src={BlogImage} className='w-60 md:w-96 ' alt="Blog" />
 
                 </div>
                 <div className="w-full sm:w-1/2 flex-col justify-center ml-6">
