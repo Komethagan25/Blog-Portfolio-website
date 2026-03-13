@@ -28,7 +28,7 @@ function Blogs() {
 
 
         window.scrollTo(0, 0);
-        axios.get("https://blog-portfolio-website.onrender.com").then((res) => {
+        axios.get("https://blog-portfolio-website.onrender.com/api/blogs").then((res) => {
             console.log(res.data)
             setBlogs(res.data)
         }).catch(() => {
@@ -44,10 +44,10 @@ function Blogs() {
 
     const handleLike = async (blog_id) => {
         try {
-            const response = await axios.patch(`https://blog-portfolio-website.onrender.com/like/${blog_id}`);
+            const response = await axios.patch(`https://blog-portfolio-website.onrender.com/api/blogs/like/${blog_id}`);
             // After successfully updating the likes count in the backend, fetch the updated list of blogs
             if (response.status === 200) {
-                axios.get("https://blog-portfolio-website.onrender.com").then((res) => {
+                axios.get("https://blog-portfolio-website.onrender.com/api/blogs").then((res) => {
                     console.log(res.data)
                     setBlogs(res.data)
                 }).catch(() => {
@@ -66,10 +66,10 @@ function Blogs() {
 
 
         const likes = 0
-        axios.post("https://blog-portfolio-website.onrender.com", { newTitle, date, newContent, likes }).then((res) => {
+        axios.post("https://blog-portfolio-website.onrender.com/api/blogs", { newTitle, date, newContent, likes }).then((res) => {
             console.log(res.data)
 
-            axios.get("https://blog-portfolio-website.onrender.com").then((res) => {
+            axios.get("https://blog-portfolio-website.onrender.com/api/blogs").then((res) => {
                 console.log(res.data)
                 setBlogs(res.data)
             }).catch(() => {
